@@ -16,8 +16,8 @@ if output != 'BMI' and output != 'bmi' and output != 'BMR' and output != 'bmr':
 # Get user's height, weight and age values
 # Never write code more than once, either place it in a function or
 # take it elsewhere where it will be used once only
-height = int(input('Please enter your height in inches: '))
-weight = int(input('Please enter your weight in pounds: '))
+height = float(input('Please enter your height in inches: '))
+weight = float(input('Please enter your weight in pounds: '))
 
 # BMI
 if output == 'BMI' or output == 'bmi':
@@ -62,4 +62,4 @@ elif output == 'bmr' or output == 'BMR':
       # Figure out and print the BMR
       bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
 
-   print ('Your BMR is: ' + bmr)
+   print ('Your BMR is: ' + str(bmr))
